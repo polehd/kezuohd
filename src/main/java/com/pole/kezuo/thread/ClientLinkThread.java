@@ -14,6 +14,7 @@ import com.pole.kezuo.init.SystemInit;
 import com.pole.kezuo.service.IDeviceService;
 import com.xx.Client;
 import com.xx.core.dto.LinkCheckMessage;
+import com.xx.core.dto.Message;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
@@ -51,7 +52,8 @@ public class ClientLinkThread implements Runnable {
                         LinkCheckMessage link = new LinkCheckMessage();
                         ConstsKezuo.setDeviceUpMsgCommInfo(link);
                         link.setStation(Integer.valueOf(ConstsKezuo.getStcdFromDevice(device)));
-                        client.sendMessage(link);
+                        Message msg = client.sendMessage(link, 6);
+                        log.info("link resp msg.toHexString() :" + msg.toHexString());
                     }else{//没有则添加
                         
                     }

@@ -1,0 +1,241 @@
+370  [main] DEBUG c.b.m.generator.AutoGenerator - ==========================准备生成文件...==========================
+1880 [main] DEBUG c.b.m.g.e.AbstractTemplateEngine - 创建目录： [D:/zlzuosrc/pole\com\pole\kezuo\service\impl]
+1881 [main] DEBUG c.b.m.g.e.AbstractTemplateEngine - 创建目录： [D:/zlzuosrc/pole\com\pole\kezuo\entity]
+1882 [main] DEBUG c.b.m.g.e.AbstractTemplateEngine - 创建目录： [D:/zlzuosrc/pole\com\pole\kezuo\web]
+1885 [main] DEBUG c.b.m.g.e.AbstractTemplateEngine - 创建目录： [D:/zlzuosrc/pole\com\pole\kezuo\mapper\xml]
+1886 [main] DEBUG org.apache.velocity - Initializing Velocity, Calling init()...
+1886 [main] DEBUG org.apache.velocity - Starting Apache Velocity v2.0
+1892 [main] DEBUG org.apache.velocity - Default Properties resource: org/apache/velocity/runtime/defaults/velocity.properties
+1905 [main] DEBUG org.apache.velocity - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+1907 [main] DEBUG org.apache.velocity - initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+1910 [main] DEBUG org.apache.velocity - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+1912 [main] DEBUG org.apache.velocity - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+1913 [main] DEBUG org.apache.velocity - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+1915 [main] DEBUG org.apache.velocity - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+1916 [main] DEBUG org.apache.velocity - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+1917 [main] DEBUG org.apache.velocity - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+1919 [main] DEBUG org.apache.velocity - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+1921 [main] DEBUG org.apache.velocity - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+1990 [main] DEBUG org.apache.velocity.parser - Created '20' parsers.
+2013 [main] DEBUG org.apache.velocity.macro - "velocimacro.library" is not set. Trying default library: VM_global_library.vm
+2014 [main] DEBUG org.apache.velocity.loader.file - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014 [main] DEBUG org.apache.velocity.macro - Default library not found.
+2014 [main] DEBUG org.apache.velocity.macro - allowInline = true: VMs can be defined inline in templates
+2014 [main] DEBUG org.apache.velocity.macro - allowInlineToOverride = false: VMs defined inline may NOT replace previous VM definitions
+2014 [main] DEBUG org.apache.velocity.macro - allowInlineLocal = false: VMs defined inline will be global in scope if allowed.
+2014 [main] DEBUG org.apache.velocity.macro - autoload off: VM system will not automatically reload global library macros
+2059 [main] DEBUG org.apache.velocity.loader - ResourceManager: found /templates/entity.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2066 [main] DEBUG org.apache.velocity.rendering - =================================================================
+2067 [main] DEBUG org.apache.velocity.rendering - == Class: class java.util.HashMap
+2069 [main] DEBUG org.apache.velocity.rendering - Reflecting class java.util.HashMap
+2071 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.Object java.util.HashMap.remove(java.lang.Object)
+2072 [main] DEBUG org.apache.velocity.rendering - Adding public boolean java.util.HashMap.remove(java.lang.Object,java.lang.Object)
+2072 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.Object java.util.HashMap.get(java.lang.Object)
+2072 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.Object java.util.HashMap.put(java.lang.Object,java.lang.Object)
+2072 [main] DEBUG org.apache.velocity.rendering - Adding public java.util.Collection java.util.HashMap.values()
+2073 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.Object java.util.HashMap.clone()
+2073 [main] DEBUG org.apache.velocity.rendering - Adding public void java.util.HashMap.clear()
+2073 [main] DEBUG org.apache.velocity.rendering - Adding public boolean java.util.HashMap.isEmpty()
+2074 [main] DEBUG org.apache.velocity.rendering - Adding public boolean java.util.HashMap.replace(java.lang.Object,java.lang.Object,java.lang.Object)
+2075 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.Object java.util.HashMap.replace(java.lang.Object,java.lang.Object)
+2075 [main] DEBUG org.apache.velocity.rendering - Adding public void java.util.HashMap.replaceAll(java.util.function.BiFunction)
+2075 [main] DEBUG org.apache.velocity.rendering - Adding public int java.util.HashMap.size()
+2076 [main] DEBUG org.apache.velocity.rendering - Adding public java.util.Set java.util.HashMap.entrySet()
+2077 [main] DEBUG org.apache.velocity.rendering - Adding public void java.util.HashMap.putAll(java.util.Map)
+2078 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.Object java.util.HashMap.putIfAbsent(java.lang.Object,java.lang.Object)
+2078 [main] DEBUG org.apache.velocity.rendering - Adding public java.util.Set java.util.HashMap.keySet()
+2078 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.Object java.util.HashMap.compute(java.lang.Object,java.util.function.BiFunction)
+2078 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.Object java.util.HashMap.computeIfAbsent(java.lang.Object,java.util.function.Function)
+2078 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.Object java.util.HashMap.computeIfPresent(java.lang.Object,java.util.function.BiFunction)
+2078 [main] DEBUG org.apache.velocity.rendering - Adding public boolean java.util.HashMap.containsKey(java.lang.Object)
+2078 [main] DEBUG org.apache.velocity.rendering - Adding public boolean java.util.HashMap.containsValue(java.lang.Object)
+2078 [main] DEBUG org.apache.velocity.rendering - Adding public void java.util.HashMap.forEach(java.util.function.BiConsumer)
+2079 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.Object java.util.HashMap.getOrDefault(java.lang.Object,java.lang.Object)
+2079 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.Object java.util.HashMap.merge(java.lang.Object,java.lang.Object,java.util.function.BiFunction)
+2079 [main] DEBUG org.apache.velocity.rendering - Reflecting interface java.util.Map
+2079 [main] DEBUG org.apache.velocity.rendering - Adding public abstract boolean java.util.Map.equals(java.lang.Object)
+2079 [main] DEBUG org.apache.velocity.rendering - Adding public abstract int java.util.Map.hashCode()
+2079 [main] DEBUG org.apache.velocity.rendering - Reflecting interface java.lang.Cloneable
+2080 [main] DEBUG org.apache.velocity.rendering - Reflecting interface java.io.Serializable
+2080 [main] DEBUG org.apache.velocity.rendering - Reflecting class java.util.AbstractMap
+2080 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.String java.util.AbstractMap.toString()
+2080 [main] DEBUG org.apache.velocity.rendering - Reflecting interface java.util.Map
+2080 [main] DEBUG org.apache.velocity.rendering - Reflecting class java.lang.Object
+2080 [main] DEBUG org.apache.velocity.rendering - Adding public final void java.lang.Object.wait() throws java.lang.InterruptedException
+2081 [main] DEBUG org.apache.velocity.rendering - Adding public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
+2081 [main] DEBUG org.apache.velocity.rendering - Adding public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
+2081 [main] DEBUG org.apache.velocity.rendering - Adding public final native java.lang.Class java.lang.Object.getClass()
+2081 [main] DEBUG org.apache.velocity.rendering - Adding public final native void java.lang.Object.notify()
+2081 [main] DEBUG org.apache.velocity.rendering - Adding public final native void java.lang.Object.notifyAll()
+2081 [main] DEBUG org.apache.velocity.rendering - =================================================================
+2086 [main] DEBUG org.apache.velocity.rendering - =================================================================
+2086 [main] DEBUG org.apache.velocity.rendering - == Class: class com.baomidou.mybatisplus.generator.config.po.TableInfo
+2086 [main] DEBUG org.apache.velocity.rendering - Reflecting class com.baomidou.mybatisplus.generator.config.po.TableInfo
+2087 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.String com.baomidou.mybatisplus.generator.config.po.TableInfo.getName()
+2087 [main] DEBUG org.apache.velocity.rendering - Adding public java.util.List com.baomidou.mybatisplus.generator.config.po.TableInfo.getFields()
+2087 [main] DEBUG org.apache.velocity.rendering - Adding public void com.baomidou.mybatisplus.generator.config.po.TableInfo.setName(java.lang.String)
+2087 [main] DEBUG org.apache.velocity.rendering - Adding public void com.baomidou.mybatisplus.generator.config.po.TableInfo.setComment(java.lang.String)
+2088 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.String com.baomidou.mybatisplus.generator.config.po.TableInfo.getComment()
+2088 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.String com.baomidou.mybatisplus.generator.config.po.TableInfo.getServiceImplName()
+2088 [main] DEBUG org.apache.velocity.rendering - Adding public void com.baomidou.mybatisplus.generator.config.po.TableInfo.setImportPackages(java.lang.String)
+2088 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.String com.baomidou.mybatisplus.generator.config.po.TableInfo.getControllerName()
+2088 [main] DEBUG org.apache.velocity.rendering - Adding public boolean com.baomidou.mybatisplus.generator.config.po.TableInfo.isLogicDelete(java.lang.String)
+2088 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.String com.baomidou.mybatisplus.generator.config.po.TableInfo.getEntityName()
+2088 [main] DEBUG org.apache.velocity.rendering - Adding public boolean com.baomidou.mybatisplus.generator.config.po.TableInfo.isConvert()
+2088 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.String com.baomidou.mybatisplus.generator.config.po.TableInfo.getMapperName()
+2089 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.String com.baomidou.mybatisplus.generator.config.po.TableInfo.getServiceName()
+2089 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.String com.baomidou.mybatisplus.generator.config.po.TableInfo.getEntityPath()
+2089 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.String com.baomidou.mybatisplus.generator.config.po.TableInfo.getXmlName()
+2090 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.String com.baomidou.mybatisplus.generator.config.po.TableInfo.getFieldNames()
+2090 [main] DEBUG org.apache.velocity.rendering - Adding public void com.baomidou.mybatisplus.generator.config.po.TableInfo.setFields(java.util.List)
+2091 [main] DEBUG org.apache.velocity.rendering - Adding public void com.baomidou.mybatisplus.generator.config.po.TableInfo.setServiceImplName(java.lang.String)
+2091 [main] DEBUG org.apache.velocity.rendering - Adding public void com.baomidou.mybatisplus.generator.config.po.TableInfo.setControllerName(java.lang.String)
+2092 [main] DEBUG org.apache.velocity.rendering - Adding public java.util.List com.baomidou.mybatisplus.generator.config.po.TableInfo.getImportPackages()
+2092 [main] DEBUG org.apache.velocity.rendering - Adding public void com.baomidou.mybatisplus.generator.config.po.TableInfo.setEntityName(com.baomidou.mybatisplus.generator.config.StrategyConfig,java.lang.String)
+2092 [main] DEBUG org.apache.velocity.rendering - Adding public void com.baomidou.mybatisplus.generator.config.po.TableInfo.setConvert(boolean)
+2092 [main] DEBUG org.apache.velocity.rendering - Adding public void com.baomidou.mybatisplus.generator.config.po.TableInfo.setCommonFields(java.util.List)
+2093 [main] DEBUG org.apache.velocity.rendering - Adding public void com.baomidou.mybatisplus.generator.config.po.TableInfo.setXmlName(java.lang.String)
+2093 [main] DEBUG org.apache.velocity.rendering - Adding public void com.baomidou.mybatisplus.generator.config.po.TableInfo.setServiceName(java.lang.String)
+2093 [main] DEBUG org.apache.velocity.rendering - Adding public void com.baomidou.mybatisplus.generator.config.po.TableInfo.setMapperName(java.lang.String)
+2094 [main] DEBUG org.apache.velocity.rendering - Adding public java.util.List com.baomidou.mybatisplus.generator.config.po.TableInfo.getCommonFields()
+2094 [main] DEBUG org.apache.velocity.rendering - Reflecting class java.lang.Object
+2094 [main] DEBUG org.apache.velocity.rendering - Adding public final void java.lang.Object.wait() throws java.lang.InterruptedException
+2094 [main] DEBUG org.apache.velocity.rendering - Adding public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
+2094 [main] DEBUG org.apache.velocity.rendering - Adding public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
+2094 [main] DEBUG org.apache.velocity.rendering - Adding public boolean java.lang.Object.equals(java.lang.Object)
+2094 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.String java.lang.Object.toString()
+2095 [main] DEBUG org.apache.velocity.rendering - Adding public native int java.lang.Object.hashCode()
+2095 [main] DEBUG org.apache.velocity.rendering - Adding public final native java.lang.Class java.lang.Object.getClass()
+2095 [main] DEBUG org.apache.velocity.rendering - Adding public final native void java.lang.Object.notify()
+2095 [main] DEBUG org.apache.velocity.rendering - Adding public final native void java.lang.Object.notifyAll()
+2095 [main] DEBUG org.apache.velocity.rendering - =================================================================
+2099 [main] DEBUG org.apache.velocity.rendering - =================================================================
+2099 [main] DEBUG org.apache.velocity.rendering - == Class: class com.baomidou.mybatisplus.generator.config.po.TableField
+2099 [main] DEBUG org.apache.velocity.rendering - Reflecting class com.baomidou.mybatisplus.generator.config.po.TableField
+2099 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.String com.baomidou.mybatisplus.generator.config.po.TableField.getName()
+2099 [main] DEBUG org.apache.velocity.rendering - Adding public void com.baomidou.mybatisplus.generator.config.po.TableField.setName(java.lang.String)
+2099 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.String com.baomidou.mybatisplus.generator.config.po.TableField.getType()
+2099 [main] DEBUG org.apache.velocity.rendering - Adding public void com.baomidou.mybatisplus.generator.config.po.TableField.setComment(java.lang.String)
+2099 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.String com.baomidou.mybatisplus.generator.config.po.TableField.getComment()
+2099 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.String com.baomidou.mybatisplus.generator.config.po.TableField.getPropertyType()
+2100 [main] DEBUG org.apache.velocity.rendering - Adding public void com.baomidou.mybatisplus.generator.config.po.TableField.setPropertyName(com.baomidou.mybatisplus.generator.config.StrategyConfig,java.lang.String)
+2100 [main] DEBUG org.apache.velocity.rendering - Adding public boolean com.baomidou.mybatisplus.generator.config.po.TableField.isConvert()
+2100 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.String com.baomidou.mybatisplus.generator.config.po.TableField.getPropertyName()
+2100 [main] DEBUG org.apache.velocity.rendering - Adding public com.baomidou.mybatisplus.generator.config.rules.DbColumnType com.baomidou.mybatisplus.generator.config.po.TableField.getColumnType()
+2100 [main] DEBUG org.apache.velocity.rendering - Adding public void com.baomidou.mybatisplus.generator.config.po.TableField.setType(java.lang.String)
+2101 [main] DEBUG org.apache.velocity.rendering - Adding public void com.baomidou.mybatisplus.generator.config.po.TableField.setKeyIdentityFlag(boolean)
+2107 [main] DEBUG org.apache.velocity.rendering - Adding public void com.baomidou.mybatisplus.generator.config.po.TableField.setColumnType(com.baomidou.mybatisplus.generator.config.rules.DbColumnType)
+2108 [main] DEBUG org.apache.velocity.rendering - Adding public void com.baomidou.mybatisplus.generator.config.po.TableField.setConvert(boolean)
+2108 [main] DEBUG org.apache.velocity.rendering - Adding public void com.baomidou.mybatisplus.generator.config.po.TableField.setFill(java.lang.String)
+2108 [main] DEBUG org.apache.velocity.rendering - Adding public boolean com.baomidou.mybatisplus.generator.config.po.TableField.isKeyFlag()
+2108 [main] DEBUG org.apache.velocity.rendering - Adding public void com.baomidou.mybatisplus.generator.config.po.TableField.setKeyFlag(boolean)
+2108 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.String com.baomidou.mybatisplus.generator.config.po.TableField.getCapitalName()
+2109 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.String com.baomidou.mybatisplus.generator.config.po.TableField.getFill()
+2109 [main] DEBUG org.apache.velocity.rendering - Adding public boolean com.baomidou.mybatisplus.generator.config.po.TableField.isKeyIdentityFlag()
+2109 [main] DEBUG org.apache.velocity.rendering - Reflecting class java.lang.Object
+2109 [main] DEBUG org.apache.velocity.rendering - Adding public final void java.lang.Object.wait() throws java.lang.InterruptedException
+2109 [main] DEBUG org.apache.velocity.rendering - Adding public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
+2109 [main] DEBUG org.apache.velocity.rendering - Adding public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
+2109 [main] DEBUG org.apache.velocity.rendering - Adding public boolean java.lang.Object.equals(java.lang.Object)
+2110 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.String java.lang.Object.toString()
+2110 [main] DEBUG org.apache.velocity.rendering - Adding public native int java.lang.Object.hashCode()
+2110 [main] DEBUG org.apache.velocity.rendering - Adding public final native java.lang.Class java.lang.Object.getClass()
+2110 [main] DEBUG org.apache.velocity.rendering - Adding public final native void java.lang.Object.notify()
+2110 [main] DEBUG org.apache.velocity.rendering - Adding public final native void java.lang.Object.notifyAll()
+2110 [main] DEBUG org.apache.velocity.rendering - =================================================================
+2125 [main] DEBUG org.apache.velocity.rendering - =================================================================
+2125 [main] DEBUG org.apache.velocity.rendering - == Class: class java.lang.String
+2125 [main] DEBUG org.apache.velocity.rendering - Reflecting class java.lang.String
+2126 [main] DEBUG org.apache.velocity.rendering - Adding public boolean java.lang.String.equals(java.lang.Object)
+2126 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.String java.lang.String.toString()
+2126 [main] DEBUG org.apache.velocity.rendering - Adding public int java.lang.String.hashCode()
+2126 [main] DEBUG org.apache.velocity.rendering - Adding public int java.lang.String.compareTo(java.lang.String)
+2126 [main] DEBUG org.apache.velocity.rendering - Adding public int java.lang.String.compareTo(java.lang.Object)
+2126 [main] DEBUG org.apache.velocity.rendering - Adding public int java.lang.String.indexOf(java.lang.String,int)
+2127 [main] DEBUG org.apache.velocity.rendering - Adding public int java.lang.String.indexOf(java.lang.String)
+2127 [main] DEBUG org.apache.velocity.rendering - Adding public int java.lang.String.indexOf(int,int)
+2127 [main] DEBUG org.apache.velocity.rendering - Adding public int java.lang.String.indexOf(int)
+2127 [main] DEBUG org.apache.velocity.rendering - Adding public static java.lang.String java.lang.String.valueOf(int)
+2127 [main] DEBUG org.apache.velocity.rendering - Adding public static java.lang.String java.lang.String.valueOf(long)
+2127 [main] DEBUG org.apache.velocity.rendering - Adding public static java.lang.String java.lang.String.valueOf(float)
+2128 [main] DEBUG org.apache.velocity.rendering - Adding public static java.lang.String java.lang.String.valueOf(boolean)
+2128 [main] DEBUG org.apache.velocity.rendering - Adding public static java.lang.String java.lang.String.valueOf(char[])
+2128 [main] DEBUG org.apache.velocity.rendering - Adding public static java.lang.String java.lang.String.valueOf(char[],int,int)
+2128 [main] DEBUG org.apache.velocity.rendering - Adding public static java.lang.String java.lang.String.valueOf(java.lang.Object)
+2129 [main] DEBUG org.apache.velocity.rendering - Adding public static java.lang.String java.lang.String.valueOf(char)
+2135 [main] DEBUG org.apache.velocity.rendering - Adding public static java.lang.String java.lang.String.valueOf(double)
+2136 [main] DEBUG org.apache.velocity.rendering - Adding public char java.lang.String.charAt(int)
+2136 [main] DEBUG org.apache.velocity.rendering - Adding public int java.lang.String.codePointAt(int)
+2136 [main] DEBUG org.apache.velocity.rendering - Adding public int java.lang.String.codePointBefore(int)
+2138 [main] DEBUG org.apache.velocity.rendering - Adding public int java.lang.String.codePointCount(int,int)
+2139 [main] DEBUG org.apache.velocity.rendering - Adding public int java.lang.String.compareToIgnoreCase(java.lang.String)
+2139 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.String java.lang.String.concat(java.lang.String)
+2139 [main] DEBUG org.apache.velocity.rendering - Adding public boolean java.lang.String.contains(java.lang.CharSequence)
+2140 [main] DEBUG org.apache.velocity.rendering - Adding public boolean java.lang.String.contentEquals(java.lang.CharSequence)
+2140 [main] DEBUG org.apache.velocity.rendering - Adding public boolean java.lang.String.contentEquals(java.lang.StringBuffer)
+2141 [main] DEBUG org.apache.velocity.rendering - Adding public static java.lang.String java.lang.String.copyValueOf(char[])
+2141 [main] DEBUG org.apache.velocity.rendering - Adding public static java.lang.String java.lang.String.copyValueOf(char[],int,int)
+2141 [main] DEBUG org.apache.velocity.rendering - Adding public boolean java.lang.String.endsWith(java.lang.String)
+2142 [main] DEBUG org.apache.velocity.rendering - Adding public boolean java.lang.String.equalsIgnoreCase(java.lang.String)
+2142 [main] DEBUG org.apache.velocity.rendering - Adding public static java.lang.String java.lang.String.format(java.util.Locale,java.lang.String,java.lang.Object[])
+2144 [main] DEBUG org.apache.velocity.rendering - Adding public static java.lang.String java.lang.String.format(java.lang.String,java.lang.Object[])
+2146 [main] DEBUG org.apache.velocity.rendering - Adding public void java.lang.String.getBytes(int,int,byte[],int)
+2146 [main] DEBUG org.apache.velocity.rendering - Adding public byte[] java.lang.String.getBytes(java.nio.charset.Charset)
+2146 [main] DEBUG org.apache.velocity.rendering - Adding public byte[] java.lang.String.getBytes(java.lang.String) throws java.io.UnsupportedEncodingException
+2146 [main] DEBUG org.apache.velocity.rendering - Adding public byte[] java.lang.String.getBytes()
+2147 [main] DEBUG org.apache.velocity.rendering - Adding public void java.lang.String.getChars(int,int,char[],int)
+2147 [main] DEBUG org.apache.velocity.rendering - Adding public native java.lang.String java.lang.String.intern()
+2147 [main] DEBUG org.apache.velocity.rendering - Adding public boolean java.lang.String.isEmpty()
+2147 [main] DEBUG org.apache.velocity.rendering - Adding public static java.lang.String java.lang.String.join(java.lang.CharSequence,java.lang.CharSequence[])
+2147 [main] DEBUG org.apache.velocity.rendering - Adding public static java.lang.String java.lang.String.join(java.lang.CharSequence,java.lang.Iterable)
+2147 [main] DEBUG org.apache.velocity.rendering - Adding public int java.lang.String.lastIndexOf(int)
+2148 [main] DEBUG org.apache.velocity.rendering - Adding public int java.lang.String.lastIndexOf(java.lang.String)
+2153 [main] DEBUG org.apache.velocity.rendering - Adding public int java.lang.String.lastIndexOf(java.lang.String,int)
+2154 [main] DEBUG org.apache.velocity.rendering - Adding public int java.lang.String.lastIndexOf(int,int)
+2154 [main] DEBUG org.apache.velocity.rendering - Adding public int java.lang.String.length()
+2154 [main] DEBUG org.apache.velocity.rendering - Adding public boolean java.lang.String.matches(java.lang.String)
+2155 [main] DEBUG org.apache.velocity.rendering - Adding public int java.lang.String.offsetByCodePoints(int,int)
+2155 [main] DEBUG org.apache.velocity.rendering - Adding public boolean java.lang.String.regionMatches(int,java.lang.String,int,int)
+2155 [main] DEBUG org.apache.velocity.rendering - Adding public boolean java.lang.String.regionMatches(boolean,int,java.lang.String,int,int)
+2155 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.String java.lang.String.replace(char,char)
+2155 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.String java.lang.String.replace(java.lang.CharSequence,java.lang.CharSequence)
+2155 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.String java.lang.String.replaceAll(java.lang.String,java.lang.String)
+2155 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.String java.lang.String.replaceFirst(java.lang.String,java.lang.String)
+2155 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.String[] java.lang.String.split(java.lang.String)
+2155 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.String[] java.lang.String.split(java.lang.String,int)
+2156 [main] DEBUG org.apache.velocity.rendering - Adding public boolean java.lang.String.startsWith(java.lang.String,int)
+2156 [main] DEBUG org.apache.velocity.rendering - Adding public boolean java.lang.String.startsWith(java.lang.String)
+2156 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.CharSequence java.lang.String.subSequence(int,int)
+2156 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.String java.lang.String.substring(int)
+2158 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.String java.lang.String.substring(int,int)
+2158 [main] DEBUG org.apache.velocity.rendering - Adding public char[] java.lang.String.toCharArray()
+2158 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.String java.lang.String.toLowerCase(java.util.Locale)
+2158 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.String java.lang.String.toLowerCase()
+2158 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.String java.lang.String.toUpperCase()
+2158 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.String java.lang.String.toUpperCase(java.util.Locale)
+2158 [main] DEBUG org.apache.velocity.rendering - Adding public java.lang.String java.lang.String.trim()
+2158 [main] DEBUG org.apache.velocity.rendering - Reflecting interface java.io.Serializable
+2158 [main] DEBUG org.apache.velocity.rendering - Reflecting interface java.lang.Comparable
+2159 [main] DEBUG org.apache.velocity.rendering - Reflecting interface java.lang.CharSequence
+2159 [main] DEBUG org.apache.velocity.rendering - Adding public default java.util.stream.IntStream java.lang.CharSequence.chars()
+2159 [main] DEBUG org.apache.velocity.rendering - Adding public default java.util.stream.IntStream java.lang.CharSequence.codePoints()
+2159 [main] DEBUG org.apache.velocity.rendering - Reflecting class java.lang.Object
+2159 [main] DEBUG org.apache.velocity.rendering - Adding public final void java.lang.Object.wait() throws java.lang.InterruptedException
+2159 [main] DEBUG org.apache.velocity.rendering - Adding public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
+2159 [main] DEBUG org.apache.velocity.rendering - Adding public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
+2159 [main] DEBUG org.apache.velocity.rendering - Adding public final native java.lang.Class java.lang.Object.getClass()
+2160 [main] DEBUG org.apache.velocity.rendering - Adding public final native void java.lang.Object.notify()
+2160 [main] DEBUG org.apache.velocity.rendering - Adding public final native void java.lang.Object.notifyAll()
+2160 [main] DEBUG org.apache.velocity.rendering - =================================================================
+2178 [main] DEBUG c.b.m.g.e.AbstractTemplateEngine - 模板:/templates/entity.java.vm;  文件:D:/zlzuosrc/pole\com\pole\kezuo\entity\Device.java
+2184 [main] DEBUG org.apache.velocity.loader - ResourceManager: found /templates/mapper.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2186 [main] DEBUG c.b.m.g.e.AbstractTemplateEngine - 模板:/templates/mapper.java.vm;  文件:D:/zlzuosrc/pole\com\pole\kezuo\mapper\DeviceMapper.java
+2195 [main] DEBUG org.apache.velocity.loader - ResourceManager: found /templates/mapper.xml.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2198 [main] DEBUG c.b.m.g.e.AbstractTemplateEngine - 模板:/templates/mapper.xml.vm;  文件:D:/zlzuosrc/pole\com\pole\kezuo\mapper\xml\DeviceMapper.xml
+2202 [main] DEBUG org.apache.velocity.loader - ResourceManager: found /templates/service.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2204 [main] DEBUG c.b.m.g.e.AbstractTemplateEngine - 模板:/templates/service.java.vm;  文件:D:/zlzuosrc/pole\com\pole\kezuo\service\IDeviceService.java
+2206 [main] DEBUG org.apache.velocity.loader - ResourceManager: found /templates/serviceImpl.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2208 [main] DEBUG c.b.m.g.e.AbstractTemplateEngine - 模板:/templates/serviceImpl.java.vm;  文件:D:/zlzuosrc/pole\com\pole\kezuo\service\impl\DeviceServiceImpl.java
+2211 [main] DEBUG org.apache.velocity.loader - ResourceManager: found /templates/controller.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2213 [main] DEBUG c.b.m.g.e.AbstractTemplateEngine - 模板:/templates/controller.java.vm;  文件:D:/zlzuosrc/pole\com\pole\kezuo\web\DeviceController.java
+2287 [main] DEBUG c.b.m.generator.AutoGenerator - ==========================文件生成完成！！！==========================

@@ -1,0 +1,260 @@
+2018-08-28 23:58:38.948 [main] DEBUG o.s.boot.devtools.settings.DevToolsSettings 114 - Included patterns for restart : [/mybatis-plus-[\w-]+.jar, /mybatis-plus-[\w-]+.jar]
+2018-08-28 23:58:38.954 [main] DEBUG o.s.boot.devtools.settings.DevToolsSettings 116 - Excluded patterns for restart : [/spring-boot-starter/target/classes/, /spring-boot-autoconfigure/target/classes/, /spring-boot-starter-[\w-]+/, /spring-boot/target/classes/, /spring-boot-actuator/target/classes/, /spring-boot-devtools/target/classes/]
+2018-08-28 23:58:38.957 [main] DEBUG o.s.boot.devtools.restart.ChangeableUrls 61 - Matching URLs for reloading : [file:/D:/zlzuosrc/pole/kezuohd/target/classes/, file:/D:/zlzuosrc/lee/xx-client/target/classes/]
+2018-08-28 23:58:39.711 [restartedMain] INFO  com.pole.kezuo.Application 48 - Starting Application on DESKTOP-ZZL with PID 9148 (D:\zlzuosrc\pole\kezuohd\target\classes started by zlzuo in D:\zlzuosrc\pole\kezuohd)
+2018-08-28 23:58:39.714 [restartedMain] DEBUG com.pole.kezuo.Application 51 - Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-08-28 23:58:39.715 [restartedMain] INFO  com.pole.kezuo.Application 597 - The following profiles are active: dev
+2018-08-28 23:58:39.883 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext 583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@60baa6fe: startup date [Tue Aug 28 23:58:39 CST 2018]; root of context hierarchy
+2018-08-28 23:58:40.651 [background-preinit] INFO  org.hibernate.validator.internal.util.Version 30 - HV000001: Hibernate Validator 5.3.5.Final
+2018-08-28 23:58:42.589 [restartedMain] INFO  o.s.b.factory.support.DefaultListableBeanFactory 828 - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]]
+2018-08-28 23:58:44.859 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer 89 - Tomcat initialized with port(s): 38388 (http)
+2018-08-28 23:58:44.887 [restartedMain] INFO  org.apache.catalina.core.StandardService 179 - Starting service [Tomcat]
+2018-08-28 23:58:44.890 [restartedMain] INFO  org.apache.catalina.core.StandardEngine 179 - Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-08-28 23:58:45.322 [localhost-startStop-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/data] 179 - Initializing Spring embedded WebApplicationContext
+2018-08-28 23:58:45.322 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader 276 - Root WebApplicationContext: initialization completed in 5447 ms
+2018-08-28 23:58:45.749 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean 190 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-08-28 23:58:45.766 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-28 23:58:45.767 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-28 23:58:45.768 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-28 23:58:45.768 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 258 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-28 23:58:46.102 [restartedMain] DEBUG com.baomidou.mybatisplus.toolkit.GlobalConfigUtils 120 - DeBug: MyBatis Plus Global configuration Initializing !
+2018-08-28 23:58:46.112 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.baomidou.mybatisplus.mapper.SqlRunner.SelectList
+2018-08-28 23:58:46.113 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.baomidou.mybatisplus.mapper.SqlRunner.SelectObjs
+2018-08-28 23:58:46.114 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.baomidou.mybatisplus.mapper.SqlRunner.Insert
+2018-08-28 23:58:46.114 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.baomidou.mybatisplus.mapper.SqlRunner.Update
+2018-08-28 23:58:46.116 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.baomidou.mybatisplus.mapper.SqlRunner.Delete
+2018-08-28 23:58:46.118 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.baomidou.mybatisplus.mapper.SqlRunner.Count
+2018-08-28 23:58:46.119 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 52 - Mybatis-plus init success.
+2018-08-28 23:58:47.806 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.selectDeviceList
+2018-08-28 23:58:47.903 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.deleteById
+2018-08-28 23:58:47.909 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.deleteBatchIds
+2018-08-28 23:58:47.922 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.updateById
+2018-08-28 23:58:47.928 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.updateAllColumnById
+2018-08-28 23:58:47.929 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.selectById
+2018-08-28 23:58:47.933 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.selectBatchIds
+2018-08-28 23:58:47.947 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.insert
+2018-08-28 23:58:47.951 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.insertAllColumn
+2018-08-28 23:58:47.962 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.delete
+2018-08-28 23:58:47.966 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.deleteByMap
+2018-08-28 23:58:47.984 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.update
+2018-08-28 23:58:47.991 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.selectByMap
+2018-08-28 23:58:48.000 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.selectOne
+2018-08-28 23:58:48.009 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.selectCount
+2018-08-28 23:58:48.028 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.selectList
+2018-08-28 23:58:48.039 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.selectPage
+2018-08-28 23:58:48.046 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.selectMaps
+2018-08-28 23:58:48.057 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.selectMapsPage
+2018-08-28 23:58:48.062 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.selectObjs
+2018-08-28 23:58:49.150 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter 534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@60baa6fe: startup date [Tue Aug 28 23:58:39 CST 2018]; root of context hierarchy
+2018-08-28 23:58:49.294 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping 543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-28 23:58:49.296 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping 543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-28 23:58:49.394 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping 362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-28 23:58:49.394 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping 362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-28 23:58:49.497 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping 362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-28 23:58:50.410 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer 58 - LiveReload server is running on port 35729
+2018-08-28 23:58:50.715 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter 431 - Registering beans for JMX exposure on startup
+2018-08-28 23:58:50.744 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol 179 - Initializing ProtocolHandler ["http-nio-38388"]
+2018-08-28 23:58:50.783 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol 179 - Starting ProtocolHandler ["http-nio-38388"]
+2018-08-28 23:58:50.823 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool 179 - Using a shared selector for servlet write/read
+2018-08-28 23:58:50.887 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer 201 - Tomcat started on port(s): 38388 (http)
+2018-08-28 23:58:51.160 [restartedMain] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - ==>  Preparing: SELECT obj.*, dist.DistrictCode FROM Device obj LEFT JOIN District dist on obj.DistrictId = dist.Id where obj.LastUpdate >= ? ORDER BY obj.LastUpdate DESC 
+2018-08-28 23:58:51.231 [restartedMain] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - ==> Parameters: 2018-08-25 23:58:50(String)
+2018-08-28 23:58:51.293 [restartedMain] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - <==      Total: 3
+2018-08-28 23:58:51.439 [Thread-11] DEBUG i.n.util.internal.logging.InternalLoggerFactory 71 - Using SLF4J as the default logging framework
+2018-08-28 23:58:51.605 [Thread-11] DEBUG io.netty.channel.MultithreadEventLoopGroup 76 - -Dio.netty.eventLoopThreads: 8
+2018-08-28 23:58:51.802 [Thread-11] DEBUG io.netty.channel.nio.NioEventLoop 76 - -Dio.netty.noKeySetOptimization: false
+2018-08-28 23:58:51.803 [Thread-11] DEBUG io.netty.channel.nio.NioEventLoop 76 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2018-08-28 23:58:51.873 [Thread-11] DEBUG io.netty.util.internal.PlatformDependent 71 - Platform: Windows
+2018-08-28 23:58:51.877 [Thread-11] DEBUG io.netty.util.internal.PlatformDependent0 76 - -Dio.netty.noUnsafe: false
+2018-08-28 23:58:51.880 [Thread-11] DEBUG io.netty.util.internal.PlatformDependent0 76 - Java version: 8
+2018-08-28 23:58:51.882 [Thread-11] DEBUG io.netty.util.internal.PlatformDependent0 71 - sun.misc.Unsafe.theUnsafe: available
+2018-08-28 23:58:51.884 [Thread-11] DEBUG io.netty.util.internal.PlatformDependent0 71 - sun.misc.Unsafe.copyMemory: available
+2018-08-28 23:58:51.885 [Thread-11] DEBUG io.netty.util.internal.PlatformDependent0 71 - java.nio.Buffer.address: available
+2018-08-28 23:58:51.959 [Thread-11] DEBUG io.netty.util.internal.PlatformDependent0 71 - direct buffer constructor: available
+2018-08-28 23:58:51.962 [Thread-11] DEBUG io.netty.util.internal.PlatformDependent0 76 - java.nio.Bits.unaligned: available, true
+2018-08-28 23:58:51.963 [Thread-11] DEBUG io.netty.util.internal.PlatformDependent0 71 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2018-08-28 23:58:51.964 [Thread-11] DEBUG io.netty.util.internal.PlatformDependent0 76 - java.nio.DirectByteBuffer.<init>(long, int): available
+2018-08-28 23:58:51.964 [Thread-11] DEBUG io.netty.util.internal.PlatformDependent 76 - sun.misc.Unsafe: available
+2018-08-28 23:58:51.975 [Thread-11] DEBUG io.netty.util.internal.PlatformDependent 76 - -Dio.netty.tmpdir: C:\Users\zlzuo\AppData\Local\Temp (java.io.tmpdir)
+2018-08-28 23:58:51.976 [Thread-11] DEBUG io.netty.util.internal.PlatformDependent 76 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-08-28 23:58:51.979 [Thread-11] DEBUG io.netty.util.internal.PlatformDependent 76 - -Dio.netty.noPreferDirect: false
+2018-08-28 23:58:51.979 [Thread-11] DEBUG io.netty.util.internal.PlatformDependent 76 - -Dio.netty.maxDirectMemory: 2839543808 bytes
+2018-08-28 23:58:51.980 [Thread-11] DEBUG io.netty.util.internal.PlatformDependent 76 - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2018-08-28 23:58:51.981 [Thread-11] DEBUG io.netty.util.internal.CleanerJava6 71 - java.nio.ByteBuffer.cleaner(): available
+2018-08-28 23:58:51.999 [Thread-11] DEBUG io.netty.util.internal.PlatformDependent 71 - org.jctools-core.MpscChunkedArrayQueue: available
+2018-08-28 23:58:52.265 [Thread-11] DEBUG io.netty.channel.DefaultChannelId 76 - -Dio.netty.processId: 9148 (auto-detected)
+2018-08-28 23:58:52.269 [Thread-11] DEBUG io.netty.util.NetUtil 76 - -Djava.net.preferIPv4Stack: false
+2018-08-28 23:58:52.274 [Thread-11] DEBUG io.netty.util.NetUtil 76 - -Djava.net.preferIPv6Addresses: false
+2018-08-28 23:58:52.547 [Thread-11] DEBUG io.netty.util.NetUtil 86 - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2018-08-28 23:58:52.548 [Thread-11] DEBUG io.netty.util.NetUtil 81 - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2018-08-28 23:58:52.623 [Thread-11] DEBUG io.netty.channel.DefaultChannelId 76 - -Dio.netty.machineId: 00:00:00:00:00:00:00:e0 (auto-detected)
+2018-08-28 23:58:52.636 [Thread-11] DEBUG io.netty.util.internal.InternalThreadLocalMap 76 - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2018-08-28 23:58:52.636 [Thread-11] DEBUG io.netty.util.internal.InternalThreadLocalMap 76 - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2018-08-28 23:58:52.659 [Thread-11] DEBUG io.netty.util.ResourceLeakDetector 81 - -Dio.netty.leakDetection.level: simple
+2018-08-28 23:58:52.659 [Thread-11] DEBUG io.netty.util.ResourceLeakDetector 81 - -Dio.netty.leakDetection.targetRecords: 4
+2018-08-28 23:58:52.719 [Thread-11] DEBUG io.netty.buffer.PooledByteBufAllocator 76 - -Dio.netty.allocator.numHeapArenas: 8
+2018-08-28 23:58:52.719 [Thread-11] DEBUG io.netty.buffer.PooledByteBufAllocator 76 - -Dio.netty.allocator.numDirectArenas: 8
+2018-08-28 23:58:52.719 [Thread-11] DEBUG io.netty.buffer.PooledByteBufAllocator 76 - -Dio.netty.allocator.pageSize: 8192
+2018-08-28 23:58:52.720 [Thread-11] DEBUG io.netty.buffer.PooledByteBufAllocator 76 - -Dio.netty.allocator.maxOrder: 11
+2018-08-28 23:58:52.720 [Thread-11] DEBUG io.netty.buffer.PooledByteBufAllocator 76 - -Dio.netty.allocator.chunkSize: 16777216
+2018-08-28 23:58:52.721 [Thread-11] DEBUG io.netty.buffer.PooledByteBufAllocator 76 - -Dio.netty.allocator.tinyCacheSize: 512
+2018-08-28 23:58:52.721 [Thread-11] DEBUG io.netty.buffer.PooledByteBufAllocator 76 - -Dio.netty.allocator.smallCacheSize: 256
+2018-08-28 23:58:52.721 [Thread-11] DEBUG io.netty.buffer.PooledByteBufAllocator 76 - -Dio.netty.allocator.normalCacheSize: 64
+2018-08-28 23:58:52.721 [Thread-11] DEBUG io.netty.buffer.PooledByteBufAllocator 76 - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2018-08-28 23:58:52.722 [Thread-11] DEBUG io.netty.buffer.PooledByteBufAllocator 76 - -Dio.netty.allocator.cacheTrimInterval: 8192
+2018-08-28 23:58:52.722 [Thread-11] DEBUG io.netty.buffer.PooledByteBufAllocator 76 - -Dio.netty.allocator.useCacheForAllThreads: true
+2018-08-28 23:58:52.742 [Thread-11] DEBUG io.netty.buffer.ByteBufUtil 76 - -Dio.netty.allocator.type: pooled
+2018-08-28 23:58:52.743 [Thread-11] DEBUG io.netty.buffer.ByteBufUtil 76 - -Dio.netty.threadLocalDirectBufferSize: 0
+2018-08-28 23:58:52.743 [Thread-11] DEBUG io.netty.buffer.ByteBufUtil 76 - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2018-08-28 23:58:56.762 [restartedMain] DEBUG io.netty.util.Recycler 76 - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2018-08-28 23:58:56.763 [restartedMain] DEBUG io.netty.util.Recycler 76 - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2018-08-28 23:58:56.763 [restartedMain] DEBUG io.netty.util.Recycler 76 - -Dio.netty.recycler.linkCapacity: 16
+2018-08-28 23:58:56.763 [restartedMain] DEBUG io.netty.util.Recycler 76 - -Dio.netty.recycler.ratio: 8
+2018-08-28 23:58:56.780 [nioEventLoopGroup-2-1] DEBUG io.netty.buffer.AbstractByteBuf 81 - -Dio.netty.buffer.bytebuf.checkAccessible: true
+2018-08-28 23:58:56.783 [nioEventLoopGroup-2-1] DEBUG io.netty.util.ResourceLeakDetectorFactory 76 - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@6ce2cd5a
+2018-08-28 23:58:56.824 [restartedMain] INFO  com.pole.kezuo.init.SystemInit 83 - linkMsg resp msg.toHexString() :68006800786712158302f2bc16
+2018-08-28 23:58:56.826 [restartedMain] INFO  com.pole.kezuo.init.SystemInit 97 - regMsg resp msg.toHexString() :68006800786712158302f2bc16
+2018-08-28 23:59:19.170 [restartedMain] INFO  com.pole.kezuo.init.SystemInit 83 - linkMsg resp msg.toHexString() :68006800786712118f02f24e16
+2018-08-28 23:59:22.892 [restartedMain] INFO  com.pole.kezuo.init.SystemInit 97 - regMsg resp msg.toHexString() :68006800786712118f02f24e16
+2018-08-28 23:59:23.981 [restartedMain] INFO  com.pole.kezuo.init.SystemInit 83 - linkMsg resp msg.toHexString() :6800680078671215cb02f2a416
+2018-08-28 23:59:23.982 [restartedMain] INFO  com.pole.kezuo.init.SystemInit 97 - regMsg resp msg.toHexString() :6800680078671215cb02f2a416
+2018-08-28 23:59:23.986 [Thread-14] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - ==>  Preparing: SELECT obj.*, dist.DistrictCode FROM Device obj LEFT JOIN District dist on obj.DistrictId = dist.Id where obj.LastUpdate >= ? ORDER BY obj.LastUpdate DESC 
+2018-08-28 23:59:23.987 [Thread-14] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - ==> Parameters: 2018-08-25 23:59:23(String)
+2018-08-28 23:59:23.997 [Thread-14] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - <==      Total: 3
+2018-08-28 23:59:24.002 [Thread-14] INFO  com.pole.kezuo.init.SystemInit 56 - link resp msg.toHexString() :680068007867121583650112081c173a3a2d16
+2018-08-28 23:59:24.003 [Thread-14] INFO  com.pole.kezuo.init.SystemInit 56 - link resp msg.toHexString() :68006800786712118f650112081c173b18c016
+2018-08-28 23:59:24.006 [Thread-14] INFO  com.pole.kezuo.init.SystemInit 56 - link resp msg.toHexString() :6800680078671215cb650112081c173b199a16
+2018-08-28 23:59:26.869 [restartedMain] INFO  com.pole.kezuo.init.SystemInit 54 - systerm init success(系統初始化成功！)
+2018-08-28 23:59:26.871 [Thread-15] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - ==>  Preparing: SELECT obj.*, dist.DistrictCode FROM Device obj LEFT JOIN District dist on obj.DistrictId = dist.Id where obj.LastUpdate >= ? ORDER BY obj.LastUpdate DESC 
+2018-08-28 23:59:26.872 [restartedMain] INFO  com.pole.kezuo.Application 57 - Started Application in 47.882 seconds (JVM running for 49.154)
+2018-08-28 23:59:26.872 [Thread-15] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - ==> Parameters: 2018-08-25 23:59:26(String)
+2018-08-28 23:59:26.880 [Thread-15] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - <==      Total: 3
+2018-08-28 23:59:26.883 [Thread-15] INFO  com.pole.kezuo.init.SystemInit 59 - RealMessage resp msg.toHexString() :68006800786712084302f2a216
+2018-08-28 23:59:26.883 [Thread-15] INFO  com.pole.kezuo.init.SystemInit 59 - RealMessage resp msg.toHexString() :68006800786712044f02f28016
+2018-08-28 23:59:26.884 [Thread-15] INFO  com.pole.kezuo.init.SystemInit 59 - RealMessage resp msg.toHexString() :68006800786712088b02f2b716
+2018-08-29 00:00:24.008 [Thread-14] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - ==>  Preparing: SELECT obj.*, dist.DistrictCode FROM Device obj LEFT JOIN District dist on obj.DistrictId = dist.Id where obj.LastUpdate >= ? ORDER BY obj.LastUpdate DESC 
+2018-08-29 00:00:24.009 [Thread-14] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - ==> Parameters: 2018-08-26 00:00:24(String)
+2018-08-29 00:00:24.018 [Thread-14] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - <==      Total: 3
+2018-08-29 00:00:24.020 [Thread-14] INFO  com.pole.kezuo.init.SystemInit 56 - link resp msg.toHexString() :68006800786712084366012416
+2018-08-29 00:00:24.020 [Thread-14] INFO  com.pole.kezuo.init.SystemInit 56 - link resp msg.toHexString() :68006800786712044f66010616
+2018-08-29 00:00:24.021 [Thread-14] INFO  com.pole.kezuo.init.SystemInit 56 - link resp msg.toHexString() :68006800786712088b66013116
+2018-08-29 00:00:36.885 [Thread-15] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - ==>  Preparing: SELECT obj.*, dist.DistrictCode FROM Device obj LEFT JOIN District dist on obj.DistrictId = dist.Id where obj.LastUpdate >= ? ORDER BY obj.LastUpdate DESC 
+2018-08-29 00:00:36.886 [Thread-15] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - ==> Parameters: 2018-08-26 00:00:36(String)
+2018-08-29 00:00:36.893 [Thread-15] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - <==      Total: 3
+2018-08-29 00:00:36.895 [Thread-15] INFO  com.pole.kezuo.init.SystemInit 59 - RealMessage resp msg.toHexString() :68006800786712084302f2a216
+2018-08-29 00:00:36.896 [Thread-15] INFO  com.pole.kezuo.init.SystemInit 59 - RealMessage resp msg.toHexString() :68006800786712044f02f28016
+2018-08-29 00:00:36.896 [Thread-15] INFO  com.pole.kezuo.init.SystemInit 59 - RealMessage resp msg.toHexString() :68006800786712088b02f2b716
+2018-08-29 00:01:24.022 [Thread-14] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - ==>  Preparing: SELECT obj.*, dist.DistrictCode FROM Device obj LEFT JOIN District dist on obj.DistrictId = dist.Id where obj.LastUpdate >= ? ORDER BY obj.LastUpdate DESC 
+2018-08-29 00:01:24.023 [Thread-14] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - ==> Parameters: 2018-08-26 00:01:24(String)
+2018-08-29 00:01:24.032 [Thread-14] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - <==      Total: 3
+2018-08-29 00:01:24.033 [Thread-14] INFO  com.pole.kezuo.init.SystemInit 56 - link resp msg.toHexString() :68006800786712084366012416
+2018-08-29 00:01:24.034 [Thread-14] INFO  com.pole.kezuo.init.SystemInit 56 - link resp msg.toHexString() :68006800786712044f66010616
+2018-08-29 00:01:24.035 [Thread-14] INFO  com.pole.kezuo.init.SystemInit 56 - link resp msg.toHexString() :68006800786712088b66013116
+2018-08-29 00:01:46.898 [Thread-15] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - ==>  Preparing: SELECT obj.*, dist.DistrictCode FROM Device obj LEFT JOIN District dist on obj.DistrictId = dist.Id where obj.LastUpdate >= ? ORDER BY obj.LastUpdate DESC 
+2018-08-29 00:01:46.899 [Thread-15] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - ==> Parameters: 2018-08-26 00:01:46(String)
+2018-08-29 00:01:46.905 [Thread-15] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - <==      Total: 3
+2018-08-29 00:01:46.907 [Thread-15] INFO  com.pole.kezuo.init.SystemInit 59 - RealMessage resp msg.toHexString() :68006800786712084302f2a216
+2018-08-29 00:01:46.908 [Thread-15] INFO  com.pole.kezuo.init.SystemInit 59 - RealMessage resp msg.toHexString() :68006800786712044f02f28016
+2018-08-29 00:01:46.909 [Thread-15] INFO  com.pole.kezuo.init.SystemInit 59 - RealMessage resp msg.toHexString() :68006800786712088b02f2b716
+2018-08-29 00:02:24.036 [Thread-14] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - ==>  Preparing: SELECT obj.*, dist.DistrictCode FROM Device obj LEFT JOIN District dist on obj.DistrictId = dist.Id where obj.LastUpdate >= ? ORDER BY obj.LastUpdate DESC 
+2018-08-29 00:02:24.038 [Thread-14] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - ==> Parameters: 2018-08-26 00:02:24(String)
+2018-08-29 00:02:24.045 [Thread-14] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - <==      Total: 3
+2018-08-29 00:02:24.048 [Thread-14] INFO  com.pole.kezuo.init.SystemInit 56 - link resp msg.toHexString() :68006800786712084366012416
+2018-08-29 00:02:24.048 [Thread-14] INFO  com.pole.kezuo.init.SystemInit 56 - link resp msg.toHexString() :68006800786712044f66010616
+2018-08-29 00:02:24.049 [Thread-14] INFO  com.pole.kezuo.init.SystemInit 56 - link resp msg.toHexString() :68006800786712088b66013116
+2018-08-29 00:02:56.913 [Thread-15] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - ==>  Preparing: SELECT obj.*, dist.DistrictCode FROM Device obj LEFT JOIN District dist on obj.DistrictId = dist.Id where obj.LastUpdate >= ? ORDER BY obj.LastUpdate DESC 
+2018-08-29 00:02:56.914 [Thread-15] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - ==> Parameters: 2018-08-26 00:02:56(String)
+2018-08-29 00:02:56.919 [Thread-15] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - <==      Total: 3
+2018-08-29 00:02:56.921 [Thread-15] INFO  com.pole.kezuo.init.SystemInit 59 - RealMessage resp msg.toHexString() :68006800786712084302f2a216
+2018-08-29 00:02:56.921 [Thread-15] INFO  com.pole.kezuo.init.SystemInit 59 - RealMessage resp msg.toHexString() :68006800786712044f02f28016
+2018-08-29 00:02:56.922 [Thread-15] INFO  com.pole.kezuo.init.SystemInit 59 - RealMessage resp msg.toHexString() :68006800786712088b02f2b716
+2018-08-29 00:03:24.052 [Thread-14] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - ==>  Preparing: SELECT obj.*, dist.DistrictCode FROM Device obj LEFT JOIN District dist on obj.DistrictId = dist.Id where obj.LastUpdate >= ? ORDER BY obj.LastUpdate DESC 
+2018-08-29 00:03:24.052 [Thread-14] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - ==> Parameters: 2018-08-26 00:03:24(String)
+2018-08-29 00:03:24.059 [Thread-14] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - <==      Total: 3
+2018-08-29 00:03:24.061 [Thread-14] INFO  com.pole.kezuo.init.SystemInit 56 - link resp msg.toHexString() :68006800786712084366012416
+2018-08-29 00:03:24.061 [Thread-14] INFO  com.pole.kezuo.init.SystemInit 56 - link resp msg.toHexString() :68006800786712044f66010616
+2018-08-29 00:03:24.062 [Thread-14] INFO  com.pole.kezuo.init.SystemInit 56 - link resp msg.toHexString() :68006800786712088b66013116
+2018-08-29 00:04:06.924 [Thread-15] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - ==>  Preparing: SELECT obj.*, dist.DistrictCode FROM Device obj LEFT JOIN District dist on obj.DistrictId = dist.Id where obj.LastUpdate >= ? ORDER BY obj.LastUpdate DESC 
+2018-08-29 00:04:06.924 [Thread-15] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - ==> Parameters: 2018-08-26 00:04:06(String)
+2018-08-29 00:04:06.931 [Thread-15] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - <==      Total: 3
+2018-08-29 00:04:06.933 [Thread-15] INFO  com.pole.kezuo.init.SystemInit 59 - RealMessage resp msg.toHexString() :68006800786712084302f2a216
+2018-08-29 00:04:06.934 [Thread-15] INFO  com.pole.kezuo.init.SystemInit 59 - RealMessage resp msg.toHexString() :68006800786712044f02f28016
+2018-08-29 00:04:06.934 [Thread-15] INFO  com.pole.kezuo.init.SystemInit 59 - RealMessage resp msg.toHexString() :68006800786712088b02f2b716
+2018-08-29 00:04:24.063 [Thread-14] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - ==>  Preparing: SELECT obj.*, dist.DistrictCode FROM Device obj LEFT JOIN District dist on obj.DistrictId = dist.Id where obj.LastUpdate >= ? ORDER BY obj.LastUpdate DESC 
+2018-08-29 00:04:24.064 [Thread-14] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - ==> Parameters: 2018-08-26 00:04:24(String)
+2018-08-29 00:04:24.070 [Thread-14] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - <==      Total: 3
+2018-08-29 00:04:24.072 [Thread-14] INFO  com.pole.kezuo.init.SystemInit 56 - link resp msg.toHexString() :68006800786712084366012416
+2018-08-29 00:04:24.072 [Thread-14] INFO  com.pole.kezuo.init.SystemInit 56 - link resp msg.toHexString() :68006800786712044f66010616
+2018-08-29 00:04:24.073 [Thread-14] INFO  com.pole.kezuo.init.SystemInit 56 - link resp msg.toHexString() :68006800786712088b66013116
+2018-08-29 00:05:16.935 [Thread-15] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - ==>  Preparing: SELECT obj.*, dist.DistrictCode FROM Device obj LEFT JOIN District dist on obj.DistrictId = dist.Id where obj.LastUpdate >= ? ORDER BY obj.LastUpdate DESC 
+2018-08-29 00:05:16.936 [Thread-15] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - ==> Parameters: 2018-08-26 00:05:16(String)
+2018-08-29 00:05:16.943 [Thread-15] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - <==      Total: 3
+2018-08-29 00:05:16.945 [Thread-15] INFO  com.pole.kezuo.init.SystemInit 59 - RealMessage resp msg.toHexString() :68006800786712084302f2a216
+2018-08-29 00:05:16.945 [Thread-15] INFO  com.pole.kezuo.init.SystemInit 59 - RealMessage resp msg.toHexString() :68006800786712044f02f28016
+2018-08-29 00:05:16.946 [Thread-15] INFO  com.pole.kezuo.init.SystemInit 59 - RealMessage resp msg.toHexString() :68006800786712088b02f2b716
+2018-08-29 00:05:24.076 [Thread-14] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - ==>  Preparing: SELECT obj.*, dist.DistrictCode FROM Device obj LEFT JOIN District dist on obj.DistrictId = dist.Id where obj.LastUpdate >= ? ORDER BY obj.LastUpdate DESC 
+2018-08-29 00:05:24.077 [Thread-14] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - ==> Parameters: 2018-08-26 00:05:24(String)
+2018-08-29 00:05:24.082 [Thread-14] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - <==      Total: 3
+2018-08-29 00:05:24.084 [Thread-14] INFO  com.pole.kezuo.init.SystemInit 56 - link resp msg.toHexString() :68006800786712084366012416
+2018-08-29 00:05:24.085 [Thread-14] INFO  com.pole.kezuo.init.SystemInit 56 - link resp msg.toHexString() :68006800786712044f66010616
+2018-08-29 00:05:24.086 [Thread-14] INFO  com.pole.kezuo.init.SystemInit 56 - link resp msg.toHexString() :68006800786712088b66013116
+2018-08-29 00:05:27.890 [Thread-7] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext 984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@60baa6fe: startup date [Tue Aug 28 23:58:39 CST 2018]; root of context hierarchy
+2018-08-29 00:05:27.894 [Thread-7] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter 449 - Unregistering JMX-exposed beans on shutdown
+2018-08-29 00:05:28.374 [restartedMain] INFO  com.pole.kezuo.Application 48 - Starting Application on DESKTOP-ZZL with PID 9148 (D:\zlzuosrc\pole\kezuohd\target\classes started by zlzuo in D:\zlzuosrc\pole\kezuohd)
+2018-08-29 00:05:28.375 [restartedMain] DEBUG com.pole.kezuo.Application 51 - Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-08-29 00:05:28.375 [restartedMain] INFO  com.pole.kezuo.Application 597 - The following profiles are active: dev
+2018-08-29 00:05:28.388 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext 583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3339cee3: startup date [Wed Aug 29 00:05:28 CST 2018]; root of context hierarchy
+2018-08-29 00:05:29.232 [restartedMain] INFO  o.s.b.factory.support.DefaultListableBeanFactory 828 - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]]
+2018-08-29 00:05:29.658 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer 89 - Tomcat initialized with port(s): 38388 (http)
+2018-08-29 00:05:29.659 [restartedMain] INFO  org.apache.catalina.core.StandardService 179 - Starting service [Tomcat]
+2018-08-29 00:05:29.664 [restartedMain] INFO  org.apache.catalina.core.StandardEngine 179 - Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-08-29 00:05:29.889 [localhost-startStop-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/data] 179 - Initializing Spring embedded WebApplicationContext
+2018-08-29 00:05:29.891 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader 276 - Root WebApplicationContext: initialization completed in 1502 ms
+2018-08-29 00:05:29.961 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean 190 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-08-29 00:05:29.962 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-29 00:05:29.962 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-29 00:05:29.963 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-29 00:05:29.963 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 258 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-29 00:05:30.069 [restartedMain] DEBUG com.baomidou.mybatisplus.toolkit.GlobalConfigUtils 120 - DeBug: MyBatis Plus Global configuration Initializing !
+2018-08-29 00:05:30.071 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.baomidou.mybatisplus.mapper.SqlRunner.SelectList
+2018-08-29 00:05:30.072 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.baomidou.mybatisplus.mapper.SqlRunner.SelectObjs
+2018-08-29 00:05:30.073 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.baomidou.mybatisplus.mapper.SqlRunner.Insert
+2018-08-29 00:05:30.074 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.baomidou.mybatisplus.mapper.SqlRunner.Update
+2018-08-29 00:05:30.076 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.baomidou.mybatisplus.mapper.SqlRunner.Delete
+2018-08-29 00:05:30.077 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.baomidou.mybatisplus.mapper.SqlRunner.Count
+2018-08-29 00:05:30.078 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 52 - Mybatis-plus init success.
+2018-08-29 00:05:30.547 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.selectDeviceList
+2018-08-29 00:05:30.552 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.deleteById
+2018-08-29 00:05:30.556 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.deleteBatchIds
+2018-08-29 00:05:30.560 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.updateById
+2018-08-29 00:05:30.568 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.updateAllColumnById
+2018-08-29 00:05:30.569 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.selectById
+2018-08-29 00:05:30.572 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.selectBatchIds
+2018-08-29 00:05:30.579 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.insert
+2018-08-29 00:05:30.582 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.insertAllColumn
+2018-08-29 00:05:30.588 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.delete
+2018-08-29 00:05:30.591 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.deleteByMap
+2018-08-29 00:05:30.597 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.update
+2018-08-29 00:05:30.601 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.selectByMap
+2018-08-29 00:05:30.606 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.selectOne
+2018-08-29 00:05:30.610 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.selectCount
+2018-08-29 00:05:30.618 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.selectList
+2018-08-29 00:05:30.624 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.selectPage
+2018-08-29 00:05:30.628 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.selectMaps
+2018-08-29 00:05:30.634 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.selectMapsPage
+2018-08-29 00:05:30.639 [restartedMain] DEBUG com.baomidou.mybatisplus.MybatisConfiguration 67 - addMappedStatement: com.pole.kezuo.mapper.DeviceMapper.selectObjs
+2018-08-29 00:05:30.881 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter 534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3339cee3: startup date [Wed Aug 29 00:05:28 CST 2018]; root of context hierarchy
+2018-08-29 00:05:30.894 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping 543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-29 00:05:30.895 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping 543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-29 00:05:30.921 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping 362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-29 00:05:30.922 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping 362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-29 00:05:30.953 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping 362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-29 00:05:31.075 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer 58 - LiveReload server is running on port 35729
+2018-08-29 00:05:31.364 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter 431 - Registering beans for JMX exposure on startup
+2018-08-29 00:05:31.376 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol 179 - Initializing ProtocolHandler ["http-nio-38388"]
+2018-08-29 00:05:31.377 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol 179 - Starting ProtocolHandler ["http-nio-38388"]
+2018-08-29 00:05:31.382 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool 179 - Using a shared selector for servlet write/read
+2018-08-29 00:05:31.395 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer 201 - Tomcat started on port(s): 38388 (http)
+2018-08-29 00:05:31.416 [restartedMain] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - ==>  Preparing: SELECT obj.*, dist.DistrictCode FROM Device obj LEFT JOIN District dist on obj.DistrictId = dist.Id where obj.LastUpdate >= ? ORDER BY obj.LastUpdate DESC 
+2018-08-29 00:05:31.417 [restartedMain] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - ==> Parameters: 2018-08-26 00:05:31(String)
+2018-08-29 00:05:31.424 [restartedMain] DEBUG c.pole.kezuo.mapper.DeviceMapper.selectDeviceList 159 - <==      Total: 3

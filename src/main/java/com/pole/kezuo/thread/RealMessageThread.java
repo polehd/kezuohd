@@ -13,6 +13,7 @@ import com.pole.kezuo.entity.Device;
 import com.pole.kezuo.init.SystemInit;
 import com.pole.kezuo.service.IDeviceService;
 import com.xx.Client;
+import com.xx.core.dto.Message;
 import com.xx.core.dto.RealtimeMessage;
 import java.util.Calendar;
 import java.util.HashMap;
@@ -54,7 +55,8 @@ public class RealMessageThread implements Runnable {
                         rm.setStation(Integer.valueOf(ConstsKezuo.getStcdFromDevice(device)));
                         rm.setChannelNum(2);
                         rm.setData(new float[]{0, device.getWaterUsed().floatValue()});
-                        client.sendMessage(rm);
+                        Message msg = client.sendMessage(rm, 6);
+                        log.info("RealMessage resp msg.toHexString() :" + msg.toHexString());
                     }
                 }
 

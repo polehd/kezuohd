@@ -27,7 +27,7 @@ public class ConstsKezuo {
     public static int PRODUCTPWD = 6;
     public static int MONTH = 7;
     public static int YEAR = 18;
-
+    
     //客户端集合
     public static final ConcurrentHashMap<String, Client> CLIENT_MAP = new ConcurrentHashMap<String, Client>();
 

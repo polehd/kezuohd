@@ -13,17 +13,19 @@ import com.pole.kezuo.thread.ClientLinkThread;
 import com.pole.kezuo.thread.RealMessageThread;
 import com.xx.Client;
 import com.xx.core.dto.LinkCheckMessage;
+import com.xx.core.dto.Message;
 import com.xx.core.dto.RegisterMessage;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.logging.Level;
 import javax.annotation.Resource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
+import org.springframework.web.client.RestTemplate;
 
 /**
  *
@@ -59,7 +61,7 @@ public class SystemInit implements CommandLineRunner {
     /**
      * 初始化登录和注册
      */
-    private void initLinkAndRegister() {
+    private void initLinkAndRegister() throws Exception {
         Map<String, Object> queryMap = new HashMap<String, Object>();
         Calendar cal = Calendar.getInstance();
         cal.add(Calendar.DAY_OF_MONTH, -3);
@@ -77,12 +79,8 @@ public class SystemInit implements CommandLineRunner {
             LinkCheckMessage link = new LinkCheckMessage();
             ConstsKezuo.setDeviceUpMsgCommInfo(link);
             link.setStation(Integer.valueOf(stcd));
-            client.sendMessage(link);
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException ex) {
-                log.error(null, ex);
-            }
+            Message linkMsg = client.sendMessage(link, 6);
+            log.info("linkMsg resp msg.toHexString() :" + linkMsg.toHexString());
 
             //注册信息
             RegisterMessage reg = new RegisterMessage();
@@ -95,7 +93,8 @@ public class SystemInit implements CommandLineRunner {
                 }
             }
             reg.setSerial(serial);
-            client.sendMessage(reg);
+            Message regMsg = client.sendMessage(reg, 6);
+            log.info("regMsg resp msg.toHexString() :" + regMsg.toHexString());
         }
     }
 }
