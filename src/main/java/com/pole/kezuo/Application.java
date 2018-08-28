@@ -3,11 +3,9 @@ package com.pole.kezuo;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@MapperScan(basePackages = "com.hongdian")
-//@ComponentScan(basePackages = {"com.hongdian"})
+@MapperScan(basePackages = "com.pole")
 public class Application {
 
 	public static void main(String[] args) {

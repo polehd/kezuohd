@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.pole.kezuo.util;
+package com.pole.kezuo.common;
 
 /**
  * @date 2017-12-15
