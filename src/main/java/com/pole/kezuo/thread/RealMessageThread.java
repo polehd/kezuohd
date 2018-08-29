@@ -29,7 +29,7 @@ import org.slf4j.LoggerFactory;
  */
 public class RealMessageThread implements Runnable {
 
-    private final Logger log = LoggerFactory.getLogger(SystemInit.class);
+    private final Logger log = LoggerFactory.getLogger(this.getClass());
 
     private IDeviceService deviceService;
 
@@ -52,10 +52,11 @@ public class RealMessageThread implements Runnable {
                         client = ConstsKezuo.CLIENT_MAP.get(CommSend.getClientIdFromDevice(device));
                         if (CommUtils.notNull(client)) {
                             Message msg = client.sendMessage(CommSend.getRealMsgFromDevice(device), 6);
-                            log.info("收到实时数据确认：" + msg.toHexString());
+                            //log.info("收到实时数据确认：" + msg.toHexString());
+                            log.info(String.format("client[%s]收到实时数据确认：%s", CommSend.getClientIdFromDevice(device), msg.toHexString()));
                         }
                     } catch (Exception e) {
-                        log.error("发送实时数据异常：", e);
+                        log.error(CommSend.getClientIdFromDevice(device) + "=发送实时数据异常：", e);
                     }
                 }
 

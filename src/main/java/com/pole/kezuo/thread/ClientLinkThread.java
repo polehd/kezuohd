@@ -10,6 +10,7 @@ import com.pole.kezuo.common.CommSend;
 import com.pole.kezuo.common.SpringContextUtil;
 import com.pole.kezuo.entity.Device;
 import com.pole.kezuo.init.SystemInit;
+import com.pole.kezuo.service.IAsyncService;
 import com.pole.kezuo.service.IDeviceService;
 import com.pole.kezuo.util.mytool.CommUtils;
 import com.pole.kezuo.util.mytool.TimeUtil;
@@ -30,12 +31,16 @@ import org.slf4j.LoggerFactory;
  */
 public class ClientLinkThread implements Runnable {
 
-    private final Logger log = LoggerFactory.getLogger(SystemInit.class);
+    private final Logger log = LoggerFactory.getLogger(this.getClass());
 
     private IDeviceService deviceService;
+    private IAsyncService asyncService;
 
     public ClientLinkThread() {
+
         deviceService = (IDeviceService) SpringContextUtil.getBean("deviceService");
+        asyncService = (IAsyncService) SpringContextUtil.getBean("asyncService");
+
     }
 
     @Override
@@ -54,35 +59,21 @@ public class ClientLinkThread implements Runnable {
                         client = ConstsKezuo.CLIENT_MAP.get(CommSend.getClientIdFromDevice(device));
                         if (CommUtils.notNull(client)) {
                             Message msg = client.sendMessage(CommSend.getLinkCheckMsgFromDevice(device), 6);
-                        }else{
+                        } else {
                             isNewClient = true;
                         }
                         //log.info("收到链路检测确认 :" + msg.toHexString());//
                     } catch (Exception e) {
                         isNewClient = true;
-                        log.error("链路异常重新创建客户端", e);
+                        log.error(CommSend.getClientIdFromDevice(device) + "-链路异常重新创建客户端", e);
                     }
 
                     //创建新client
-                    if(isNewClient) {
+                    if (isNewClient) {
                         try {
-                            client = new Client(ConstsKezuo.HOST, ConstsKezuo.PORT);
-                            //等待客户端启动
-                            Thread.sleep(5000);
-                            String clentId = CommSend.getClientIdFromDevice(device);
-                            ConstsKezuo.CLIENT_MAP.remove(clentId);
-                            ConstsKezuo.CLIENT_MAP.put(clentId, client);
-
-                            log.info("device.toString() :" + device.toString());
-
-                            //链路信息
-                            Message linkResp = client.sendMessage(CommSend.getLinkCheckMsgFromDevice(device), 6);
-
-                            //注册信息
-                            Message regResp = client.sendMessage(CommSend.getRegMsgFromDevice(device), 6);
-                            log.info("收到注册信息确认:" + regResp.toHexString());
-                        } catch (Exception ex) {
-                            log.error(null, ex);
+                            asyncService.executeAsync(device);
+                        } catch (Exception e) {
+                            log.error(null, e);
                         }
                     }
                 }
