@@ -5,6 +5,7 @@
  */
 package com.pole.kezuo.thread;
 
+import com.pole.kezuo.common.CommSend;
 import com.pole.kezuo.common.ConstsKezuo;
 import com.pole.kezuo.common.SpringContextUtil;
 import com.pole.kezuo.entity.Device;
@@ -42,21 +43,19 @@ public class RealMessageThread implements Runnable {
             try {
                 Map<String, Object> queryMap = new HashMap<String, Object>();
                 Calendar cal = Calendar.getInstance();
-                cal.add(Calendar.DAY_OF_MONTH, -3);
+                cal.add(Calendar.DAY_OF_MONTH, ConstsKezuo.DAYS_PRE);
                 queryMap.put("beginTime", TimeUtil.convertDateToString(cal.getTime(), TimeUtil.YMDHMS));
                 List<Device> list = deviceService.selectDeviceList(queryMap);
                 Client client;
                 for (Device device : list) {//定时发送实时数据
-                    client = ConstsKezuo.CLIENT_MAP.get(ConstsKezuo.getClientIdFromDevice(device));
-                    if (CommUtils.notNull(client)) {
-                        //实时信息
-                        RealtimeMessage rm = new RealtimeMessage();
-                        ConstsKezuo.setDeviceUpMsgCommInfo(rm);
-                        rm.setStation(Integer.valueOf(ConstsKezuo.getStcdFromDevice(device)));
-                        rm.setChannelNum(2);
-                        rm.setData(new float[]{0, device.getWaterUsed().floatValue()});
-                        Message msg = client.sendMessage(rm, 6);
-                        log.info("RealMessage resp msg.toHexString() :" + msg.toHexString());
+                    try {
+                        client = ConstsKezuo.CLIENT_MAP.get(CommSend.getClientIdFromDevice(device));
+                        if (CommUtils.notNull(client)) {
+                            Message msg = client.sendMessage(CommSend.getRealMsgFromDevice(device), 6);
+                            log.info("收到实时数据确认：" + msg.toHexString());
+                        }
+                    } catch (Exception e) {
+                        log.error("发送实时数据异常：", e);
                     }
                 }
 
@@ -65,7 +64,7 @@ public class RealMessageThread implements Runnable {
             }
 
             try {
-                Thread.sleep(70000);
+                Thread.sleep(15000);
             } catch (Exception e) {
                 log.error(null, e);
             }
