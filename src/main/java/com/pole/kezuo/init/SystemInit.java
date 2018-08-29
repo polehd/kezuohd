@@ -5,12 +5,12 @@
  */
 package com.pole.kezuo.init;
 
-import com.hongdian.saas.util.time.TimeUtil;
 import com.pole.kezuo.common.ConstsKezuo;
 import com.pole.kezuo.entity.Device;
 import com.pole.kezuo.service.IDeviceService;
 import com.pole.kezuo.thread.ClientLinkThread;
 import com.pole.kezuo.thread.RealMessageThread;
+import com.pole.kezuo.util.mytool.TimeUtil;
 import com.xx.Client;
 import com.xx.core.dto.LinkCheckMessage;
 import com.xx.core.dto.Message;
@@ -22,10 +22,8 @@ import java.util.Map;
 import javax.annotation.Resource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-import org.springframework.web.client.RestTemplate;
 
 /**
  *

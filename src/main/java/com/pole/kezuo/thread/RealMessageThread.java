@@ -5,13 +5,13 @@
  */
 package com.pole.kezuo.thread;
 
-import com.hongdian.saas.util.CommUtils;
-import com.hongdian.saas.util.time.TimeUtil;
 import com.pole.kezuo.common.ConstsKezuo;
 import com.pole.kezuo.common.SpringContextUtil;
 import com.pole.kezuo.entity.Device;
 import com.pole.kezuo.init.SystemInit;
 import com.pole.kezuo.service.IDeviceService;
+import com.pole.kezuo.util.mytool.CommUtils;
+import com.pole.kezuo.util.mytool.TimeUtil;
 import com.xx.Client;
 import com.xx.core.dto.Message;
 import com.xx.core.dto.RealtimeMessage;
