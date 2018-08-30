@@ -22,6 +22,7 @@ import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 import com.pole.kezuo.service.IAsyncService;
 
 /**
@@ -66,9 +67,11 @@ public class SystemInit implements CommandLineRunner {
         cal.add(Calendar.DAY_OF_MONTH, ConstsKezuo.DAYS_PRE);
         queryMap.put("beginTime", TimeUtil.convertDateToString(cal.getTime(), TimeUtil.YMDHMS));
         List<Device> list = deviceService.selectDeviceList(queryMap);
-        for (Device device : list) {
+        Device device;
+        for (int i = 0, size = ConstsKezuo.calcClentNum(list.size()); i < size; i++) {
+            device = list.get(i);
             try {
-                asyncService.executeAsync(device);
+                asyncService.executeAsync(device,i);
             } catch (Exception e) {
                 log.error(null, e);
             }

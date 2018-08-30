@@ -38,4 +38,22 @@ public class ConstsKezuo {
     //客户端集合
     public static final ConcurrentHashMap<String, Client> CLIENT_MAP = new ConcurrentHashMap<String, Client>();
 
+
+    public static final int CLIENT_NUM_LIMIT = 30;//测试阶段限制数较小,设置-1，表示没有限制，以max准
+    public static final int CLIENT_NUM_MAX = 300;//最大客户端数量
+
+    /**
+     * @param size
+     * @return
+     */
+    public static int calcClentNum(int size) {
+        if (CLIENT_NUM_LIMIT > 0 && CLIENT_NUM_LIMIT < size) {
+            return CLIENT_NUM_LIMIT;
+        }
+        if (size <= CLIENT_NUM_MAX) {
+            return size;
+        } else {
+            return CLIENT_NUM_MAX;
+        }
+    }
 }

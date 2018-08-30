@@ -47,13 +47,16 @@ public class RealMessageThread implements Runnable {
                 queryMap.put("beginTime", TimeUtil.convertDateToString(cal.getTime(), TimeUtil.YMDHMS));
                 List<Device> list = deviceService.selectDeviceList(queryMap);
                 Client client;
-                for (Device device : list) {//定时发送实时数据
+                Device device;
+                for (int i = 0, size = ConstsKezuo.calcClentNum(list.size()); i < size; i++) {
+                    device = list.get(i);
+                    //for (Device device : list) {//定时发送实时数据
                     try {
                         client = ConstsKezuo.CLIENT_MAP.get(CommSend.getClientIdFromDevice(device));
                         if (CommUtils.notNull(client)) {
                             Message msg = client.sendMessage(CommSend.getRealMsgFromDevice(device), 6);
                             //log.info("收到实时数据确认：" + msg.toHexString());
-                            log.info(String.format("client[%s]收到实时数据确认：%s", CommSend.getClientIdFromDevice(device), msg.toHexString()));
+                            log.info(String.format("client[%s]i[%s]收到实时数据确认：%s", i, CommSend.getClientIdFromDevice(device), msg.toHexString()));
                         }
                     } catch (Exception e) {
                         log.error(CommSend.getClientIdFromDevice(device) + "=发送实时数据异常：", e);
@@ -65,7 +68,7 @@ public class RealMessageThread implements Runnable {
             }
 
             try {
-                Thread.sleep(15000);
+                Thread.sleep(300000);
             } catch (Exception e) {
                 log.error(null, e);
             }
