@@ -45,8 +45,8 @@ public class SystemInit implements CommandLineRunner {
 
             this.initLinkAndRegister();
 
-            Thread clientLinkThread = new Thread(new ClientLinkThread());
-            clientLinkThread.start();
+//            Thread clientLinkThread = new Thread(new ClientLinkThread());
+//            clientLinkThread.start();
 
             Thread realMessageThread = new Thread(new RealMessageThread());
             realMessageThread.start();

@@ -4,9 +4,9 @@ server:
 
 spring: 
   datasource: 
-    url: jdbc:sqlserver://172.16.22.208:1433;databaseName=WaterMonitorSystemDB_KZZQ
+    url: jdbc:sqlserver://hdwuhan.ddns.info:30255;databaseName=WaterMonitorSystemDB_KZZQ
     username: sa
-    password: 123456789Zz
+    password: sa123456@
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
     
   application:

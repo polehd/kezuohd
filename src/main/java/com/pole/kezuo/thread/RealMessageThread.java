@@ -10,6 +10,7 @@ import com.pole.kezuo.common.ConstsKezuo;
 import com.pole.kezuo.common.SpringContextUtil;
 import com.pole.kezuo.entity.Device;
 import com.pole.kezuo.init.SystemInit;
+import com.pole.kezuo.service.IAsyncService;
 import com.pole.kezuo.service.IDeviceService;
 import com.pole.kezuo.util.mytool.CommUtils;
 import com.pole.kezuo.util.mytool.TimeUtil;
@@ -32,10 +33,13 @@ public class RealMessageThread implements Runnable {
     private final Logger log = LoggerFactory.getLogger(this.getClass());
 
     private IDeviceService deviceService;
+    private IAsyncService asyncService;
 
     public RealMessageThread() {
         deviceService = (IDeviceService) SpringContextUtil.getBean("deviceService");
+        asyncService = (IAsyncService) SpringContextUtil.getBean("asyncService");
     }
+
 
     @Override
     public void run() {
@@ -53,10 +57,17 @@ public class RealMessageThread implements Runnable {
                     //for (Device device : list) {//定时发送实时数据
                     try {
                         client = ConstsKezuo.CLIENT_MAP.get(CommSend.getClientIdFromDevice(device));
-                        if (CommUtils.notNull(client)) {
+                        if (CommUtils.notNull(client) && client.isRunning()) {
                             Message msg = client.sendMessage(CommSend.getRealMsgFromDevice(device), 6);
                             //log.info("收到实时数据确认：" + msg.toHexString());
                             log.info(String.format("client[%s]i[%s]收到实时数据确认：%s", i, CommSend.getClientIdFromDevice(device), msg.toHexString()));
+                        }else  {
+                            try {
+                                ConstsKezuo.CLIENT_MAP.remove(CommSend.getClientIdFromDevice(device));
+                                asyncService.executeAsync(device, i);
+                            } catch (Exception e) {
+                                log.error(null, e);
+                            }
                         }
                     } catch (Exception e) {
                         log.error(CommSend.getClientIdFromDevice(device) + "=发送实时数据异常：", e);
@@ -68,7 +79,7 @@ public class RealMessageThread implements Runnable {
             }
 
             try {
-                Thread.sleep(300000);
+                Thread.sleep(60000);
             } catch (Exception e) {
                 log.error(null, e);
             }
