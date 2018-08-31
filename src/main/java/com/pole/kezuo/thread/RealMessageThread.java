@@ -52,25 +52,27 @@ public class RealMessageThread implements Runnable {
                 List<Device> list = deviceService.selectDeviceList(queryMap);
                 Client client;
                 Device device;
+                String stcd = "";
                 for (int i = 0, size = ConstsKezuo.calcClentNum(list.size()); i < size; i++) {
                     device = list.get(i);
                     //for (Device device : list) {//定时发送实时数据
                     try {
-                        client = ConstsKezuo.CLIENT_MAP.get(CommSend.getClientIdFromDevice(device));
+                        stcd = CommSend.getStcdFromDevice(device);
+                        client = ConstsKezuo.CLIENT_MAP.get(stcd);
                         if (CommUtils.notNull(client) && client.isRunning()) {
                             Message msg = client.sendMessage(CommSend.getRealMsgFromDevice(device), 6);
                             //log.info("收到实时数据确认：" + msg.toHexString());
-                            log.info(String.format("client[%s]i[%s]收到实时数据确认：%s", i, CommSend.getClientIdFromDevice(device), msg.toHexString()));
+                            log.info(String.format("i[%s]client[%s]收到实时数据确认：%s", i, stcd, msg.toHexString()));
                         }else  {
                             try {
-                                ConstsKezuo.CLIENT_MAP.remove(CommSend.getClientIdFromDevice(device));
+                                ConstsKezuo.CLIENT_MAP.remove(stcd);
                                 asyncService.executeAsync(device, i);
                             } catch (Exception e) {
                                 log.error(null, e);
                             }
                         }
                     } catch (Exception e) {
-                        log.error(CommSend.getClientIdFromDevice(device) + "=发送实时数据异常：", e);
+                        log.error(stcd + "-client发送实时数据异常：", e);
                     }
                 }
 

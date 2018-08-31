@@ -56,12 +56,14 @@ public class ClientLinkThread implements Runnable {
                 Client client;
                 Boolean isNewClient = false;
                 Device device;
+                String stcd = "";
                 for (int i = 0, size = ConstsKezuo.calcClentNum(list.size()); i < size; i++) {
                     device = list.get(i);
                     //for (Device device : list) {//定时维护链路连接,还要定时清除Map,链路检测改为异步。
                     try {
-                        client = ConstsKezuo.CLIENT_MAP.get(CommSend.getClientIdFromDevice(device));
-                        if (CommUtils.notNull(client)) {
+                        stcd = CommSend.getStcdFromDevice(device);
+                        client = ConstsKezuo.CLIENT_MAP.get(stcd);
+                        if (CommUtils.notNull(client) && client.isRunning()) {
                             Message msg = client.sendMessage(CommSend.getLinkCheckMsgFromDevice(device), 6);
                             //log.info("收到链路检测确认 :" + msg.toHexString());
                         } else {
@@ -69,7 +71,7 @@ public class ClientLinkThread implements Runnable {
                         }
                     } catch (ClientException ce) {
                         isNewClient = true;
-                        log.error(CommSend.getClientIdFromDevice(device) + "-ClientException重新创建客户端", ce);
+                        log.error(stcd + "-ClientException重新创建客户端", ce);
                     } catch (Exception e) {
                         log.error("非ClientException异常：", e);
                     }

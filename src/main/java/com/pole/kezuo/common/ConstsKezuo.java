@@ -20,7 +20,7 @@ public class ConstsKezuo {
     public static String HOST = "tripnet.unilogger.cn";//主机IP
     public static int PORT = 10260;//主机端口
 
-    public static int DAYS_PRE = -10;//向前推的天数
+    public static int DAYS_PRE = -2;//向前推的天数
 
 
     //INT DIRECT, INT DIV, INT FCB, INT FUNCTIONCODE, INT PRODUCTNO, INT PRODUCTPWD, INT MONTH, INT YEAR;
