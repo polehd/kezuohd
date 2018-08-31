@@ -20,8 +20,6 @@ public class ConstsKezuo {
     public static String HOST = "tripnet.unilogger.cn";//主机IP
     public static int PORT = 10260;//主机端口
 
-    public static int DAYS_PRE = -2;//向前推的天数
-
 
     //INT DIRECT, INT DIV, INT FCB, INT FUNCTIONCODE, INT PRODUCTNO, INT PRODUCTPWD, INT MONTH, INT YEAR;
     public static int DIRECT_UP = 1;
@@ -39,7 +37,7 @@ public class ConstsKezuo {
     //客户端集合
     public static final ConcurrentHashMap<String, Client> CLIENT_MAP = new ConcurrentHashMap<String, Client>();
 
-
+    public static int DAYS_PRE = -2;//向前推的天数
     public static final int CLIENT_NUM_LIMIT = 100;//测试阶段限制数较小,设置-1，表示没有限制，以max准
     public static final int CLIENT_NUM_MAX = 300;//最大客户端数量
 

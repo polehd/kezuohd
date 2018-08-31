@@ -14,16 +14,16 @@ public class FloatToHex2 {
     public static void main(String[] args) {
       
         try {
-            String sum = "469bd7cd";
-            System.out.print("String（469bd7cd） to float : ");
+            String sum = "33431445";
+            System.out.print("String（33431445） to float : ");
             System.out.println(Float.intBitsToFloat(Integer.valueOf(sum.trim(), 16)));
         } catch (Exception e) {
             e.printStackTrace();
         }
 
         try {
-            String sum2 = "43a20000";
-            System.out.print("String（43a20000） to float : ");
+            String sum2 = "45144333";
+            System.out.print("String（45144333） to float : ");
             System.out.println(Float.intBitsToFloat(Integer.valueOf(sum2.trim(), 16)));
         } catch (Exception e) {
             e.printStackTrace();
